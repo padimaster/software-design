@@ -18,6 +18,5 @@ public class App {
 
         // Exito
         System.out.println(cajero.extraerDinero("Matias", 100, 1234));
-        
     }
 }

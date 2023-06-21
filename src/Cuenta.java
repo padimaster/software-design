@@ -9,6 +9,19 @@ public class Cuenta {
         this.PIN = PIN;
     }
 
+    public boolean verificarSaldoPrevioRetiro(double monto){
+        if (monto > this.saldo) {
+            System.err.println("El cajero no tiene suficiente dinero");
+            return false;
+        }
+
+        return true;
+    }
+
+    public void extraerDinero(double monto){
+        this.saldo -= monto;
+    }
+
     public double getSaldo() {
         return this.saldo;
     }
